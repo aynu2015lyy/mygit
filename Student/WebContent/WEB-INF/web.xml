@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Student</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>chapter.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/asd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Mains</servlet-name>
+    <servlet-class>chapter1.Mains</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mains</servlet-name>
+    <url-pattern>/mmm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AllFind</servlet-name>
+    <servlet-class>chapter1.AllFind</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllFind</servlet-name>
+    <url-pattern>/aff</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OneFind</servlet-name>
+    <servlet-class>chapter1.OneFind</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneFind</servlet-name>
+    <url-pattern>/off</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>chapter1.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/dee</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Update</servlet-name>
+    <servlet-class>chapter1.Update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Update</servlet-name>
+    <url-pattern>/upp</url-pattern>
+  </servlet-mapping>
+   <filter>
+          <filter-name>MyFilter</filter-name>
+          <filter-class>chapter1.MyFilter</filter-class>
+      </filter>
+  
+      <filter-mapping>
+          <filter-name>MyFilter</filter-name>
+          <url-pattern>*.jsp</url-pattern>
+     </filter-mapping>
+  
+  
+  
+  
+ 
+  
+</web-app>
