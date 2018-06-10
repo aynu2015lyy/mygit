@@ -1,5 +1,5 @@
 package chapter;
-//è®¾ç½®è´¦å·å¯†ç çš„ç•Œé¢
+//ÉèÖÃÕËºÅÃÜÂëµÄ½çÃæ
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
 		PrintWriter pw=response.getWriter();
-		//ç”¨æˆ·åä¸ºâ€œlyyâ€,å¯†ç ä¸ºï¼š111
+		//ÓÃ»§ÃûÎª¡°lyy¡±,ÃÜÂëÎª£º111
 		if(("lyy").equals(username)&&("111").equals(password)){
 			User user=new User();
 			user.setUsername(username);
@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
 			request.getSession().setAttribute("user", user);
 			response.sendRedirect("/Student/Operation.jsp");
 		}else{
-			pw.write("ç”¨æˆ·åå¯†ç é”™è¯¯ï¼Œç™»å½•å¤±è´¥");
+			pw.write("ÓÃ»§ÃûÃÜÂë´íÎó£¬µÇÂ¼Ê§°Ü");
 			
 		}
 	}

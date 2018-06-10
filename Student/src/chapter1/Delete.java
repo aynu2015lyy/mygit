@@ -20,8 +20,8 @@ public class Delete extends HttpServlet {
 		if(id!=null){
 			ud.delete(id);
 			PrintWriter pw=response.getWriter();
-			pw.print("åˆ é™¤æˆåŠŸï¼"+"</br>"
-					+"<a href='/Student/Delete.jsp'>è¿”å›ä¸Šä¸€é¡µ</a>"
+			pw.print("É¾³ı³É¹¦£¡"+"</br>"
+					+"<a href='/Student/Delete.jsp'>·µ»ØÉÏÒ»Ò³</a>"
 					+"</br>");
 		}
 		

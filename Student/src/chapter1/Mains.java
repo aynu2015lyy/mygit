@@ -1,4 +1,4 @@
-package chapter1;//å®ç°æ·»åŠ ä¿¡æ¯çš„ç±»
+package chapter1;//ÊµÏÖÌí¼ÓĞÅÏ¢µÄÀà
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,14 +33,14 @@ public class Mains extends HttpServlet {
 		boolean b=ud.insert(user);
 		if(b){
 			PrintWriter pw=response.getWriter();
-			pw.print("æ·»åŠ æˆåŠŸï¼"+"</br>"+"<a href='/Student/Add.jsp'>ç»§ç»­æ·»åŠ ä¿¡æ¯</a>"+"</br>"
+			pw.print("Ìí¼Ó³É¹¦£¡"+"</br>"+"<a href='/Student/Add.jsp'>¼ÌĞøÌí¼ÓĞÅÏ¢</a>"+"</br>"
 			
-			+"<a href='/Student/Operation.jsp'>è¿”å›ä¸»é¡µé¢</a>");
+			+"<a href='/Student/Operation.jsp'>·µ»ØÖ÷Ò³Ãæ</a>");
 		}else{
 			PrintWriter pw=response.getWriter();
-			pw.print("æ·»åŠ å¤±è´¥ï¼"+"</br>"+"<a href='/Student/Add.jsp'>ç»§ç»­æ·»åŠ ä¿¡æ¯</a>"+"</br>"
+			pw.print("Ìí¼ÓÊ§°Ü£¡"+"</br>"+"<a href='/Student/Add.jsp'>¼ÌĞøÌí¼ÓĞÅÏ¢</a>"+"</br>"
 			
-			+"<a href='/Student/Operation.jsp'>è¿”å›ä¸»é¡µé¢</a>");
+			+"<a href='/Student/Operation.jsp'>·µ»ØÖ÷Ò³Ãæ</a>");
 		}	
 	}
 

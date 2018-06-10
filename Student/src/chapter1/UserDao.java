@@ -1,12 +1,12 @@
 package chapter1;
 
-import java.sql.*;
+  import java.sql.*;
 import java.util.ArrayList;
 
 
 
 public class UserDao {
-	//æ·»åŠ ä¿¡æ¯
+	//Ìí¼ÓĞÅÏ¢
 	public boolean insert(User user){
 		
 		Connection conn=null;
@@ -38,7 +38,7 @@ public class UserDao {
 		return false;
 		
 	}
-	//æŸ¥è¯¢å…¨éƒ¨ä¿¡æ¯
+	//²éÑ¯È«²¿ĞÅÏ¢
 	public ArrayList<User>findALL(){
 		
 		Connection conn=null;
@@ -69,7 +69,7 @@ public class UserDao {
 		
 		
 	}
-	//æŒ‰å­¦å·æŸ¥æ‰¾ä¿¡æ¯
+	//°´Ñ§ºÅ²éÕÒĞÅÏ¢
 	public User find(String id){
 		Connection conn=null;
 		Statement stmt=null;
@@ -96,7 +96,7 @@ public class UserDao {
 		return null;
 		
 	}
-	//åˆ é™¤ä¿¡æ¯æ–¹æ³•
+	//É¾³ıĞÅÏ¢·½·¨
 	public boolean delete(String id){
 		Connection conn=null;
 		Statement stmt=null;
@@ -118,7 +118,7 @@ public class UserDao {
 		return false;
 		
 		}
-	//ä¿®è¯¥ä¿¡æ¯
+	//ĞŞ¸ÃĞÅÏ¢
 	public boolean update(User user){
 		Connection conn=null;
 		Statement stmt=null;

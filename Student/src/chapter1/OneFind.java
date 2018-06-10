@@ -22,12 +22,12 @@ public class OneFind extends HttpServlet {
 		if(id!=null){
 			
 			PrintWriter pw=response.getWriter();
-			pw.print("è¿™"+id+"IDçš„æ•°æ®æ˜¯ï¼š"
-					+"å§“å"+user.getName()+"--"
-					+"æ€§åˆ«"+user.getSex()+"--"
-					+"ç­çº§"+user.getGrade()
+			pw.print("Õâ"+id+"IDµÄÊı¾İÊÇ£º"
+					+"ĞÕÃû"+user.getName()+"--"
+					+"ĞÔ±ğ"+user.getSex()+"--"
+					+"°à¼¶"+user.getGrade()
 					+"</br>"
-					+"<a href='/Student/onefind.jsp'>è¿”å›ä¸Šä¸€é¡µ</a>"
+					+"<a href='/Student/onefind.jsp'>·µ»ØÉÏÒ»Ò³</a>"
 					+"</br>");
 		}
 		

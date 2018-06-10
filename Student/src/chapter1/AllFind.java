@@ -1,4 +1,4 @@
-package chapter1;//æŸ¥è¯¢å…¨éƒ¨ä¿¡æ¯å®ç°ç±»
+package chapter1;//²éÑ¯È«²¿ĞÅÏ¢ÊµÏÖÀà
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,15 +21,15 @@ public class AllFind extends HttpServlet {
 		
 		for(int i=0;i<al.size();i++){
 			PrintWriter pw=response.getWriter();
-			pw.print("ç¬¬"+(i+1)+"çš„æ•°æ®æ˜¯ï¼š"
-					+"å­¦å·"+al.get(i).getId()+"--"
-					+"å§“å"+al.get(i).getName()+"--"
-					+"æ€§åˆ«"+al.get(i).getSex()+"--"
-					+"ç­çº§"+al.get(i).getGrade()+"</br>"
+			pw.print("µÚ"+(i+1)+"µÄÊı¾İÊÇ£º"
+					+"Ñ§ºÅ"+al.get(i).getId()+"--"
+					+"ĞÕÃû"+al.get(i).getName()+"--"
+					+"ĞÔ±ğ"+al.get(i).getSex()+"--"
+					+"°à¼¶"+al.get(i).getGrade()+"</br>"
 					);
 		}
 		PrintWriter pw=response.getWriter();
-		pw.print("<a href='/Student/Search.jsp'>è¿”å›ä¸Šä¸€é¡µ</a>");
+		pw.print("<a href='/Student/Search.jsp'>·µ»ØÉÏÒ»Ò³</a>");
 		
 		
 	}

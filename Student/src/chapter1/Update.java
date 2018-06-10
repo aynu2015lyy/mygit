@@ -33,14 +33,14 @@ public class Update extends HttpServlet {
 		boolean b=ud.update(user);
 		if(b){
 			PrintWriter pw=response.getWriter();
-			pw.print("ä¿®æ”¹æˆåŠŸï¼"+"</br>"+"<a href='/Student/Update.jsp'>ç»§ç»­ä¿®æ”¹ä¿¡æ¯</a>"+"</br>"
+			pw.print("ĞŞ¸Ä³É¹¦£¡"+"</br>"+"<a href='/Student/Update.jsp'>¼ÌĞøĞŞ¸ÄĞÅÏ¢</a>"+"</br>"
 			
-			+"<a href='/Student/Operation.jsp'>è¿”å›ä¸»é¡µé¢</a>");
+			+"<a href='/Student/Operation.jsp'>·µ»ØÖ÷Ò³Ãæ</a>");
 		}else{
 			PrintWriter pw=response.getWriter();
-			pw.print("ä¿®æ”¹å¤±è´¥ï¼"+"</br>"+"<a href='/Student/Update.jsp'>ç»§ç»­ä¿®æ”¹ä¿¡æ¯</a>"+"</br>"
+			pw.print("ĞŞ¸ÄÊ§°Ü£¡"+"</br>"+"<a href='/Student/Update.jsp'>¼ÌĞøĞŞ¸ÄĞÅÏ¢</a>"+"</br>"
 			
-			+"<a href='/Student/Operation.jsp'>è¿”å›ä¸»é¡µé¢</a>");
+			+"<a href='/Student/Operation.jsp'>·µ»ØÖ÷Ò³Ãæ</a>");
 		}
 		
 	}
